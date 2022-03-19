@@ -13,6 +13,8 @@ function numberOfPeople(number) {
     yourName = '（' + inputName + '）';
     // #settingを削除する
     document.getElementById('settings').remove();
+    // canvasの周りの枠を追加
+    document.getElementById("canvas").classList.add("canvas");
     // 盤面を描写
     draw();
 }

@@ -6,11 +6,6 @@
     <title>リバーシ</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
-        body {
-            /* 背景色指定（グラデーション） */
-            background: #4cb8c4;
-            background: linear-gradient(to right, #4cb8c4d8, #3cd3ad8c);
-        }
         #contents {
             width: 400px;
             margin: 0 auto;
@@ -34,22 +29,20 @@
             /* z-index: 100なので最前面 */
             z-index: 100;
         }
-        #canvas {
-            border: solid 5px;
-            border-radius: 15px 15px 15px 15px / 15px 15px 15px 15px;
-        }
         #inputName {
             width: 250px;
             margin: 0 auto;
             text-align: center;
         }
+        .canvas {
+            border: solid 5px;
+            border-radius: 15px 15px 15px 15px / 15px 15px 15px 15px;
+        }
     </style>
 </head>
 <body>
     <div id="settings">
-        <h2>リバーシ</h2>
-        <a href="../readme.html">遊び方説明（../readme.html）</a>
-        <br><br>
+        <h2>リバーシ</h2><br>
         <p>どのモードでプレイしますか？</p>
         <label for="inputName" class="form-label">名前</label>
         <input type="text" value="あなた" id="inputName" class="form-control"><br><br>
